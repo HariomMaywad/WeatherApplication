@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="weather">
+        <div class="row mb-5 mt-4">
+          <div class="col">
+            <input
+              list="suggetions"
+              type="search"
+              placeholder="Enter City Name"
+            />
+            <datalist id="suggetions"> </datalist>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col-sm-4 mb-3">
+            <div class="row weather-city">
+              <div class="col city">City</div>
+            </div>
+            <div class="row weather-day">
+              <div class="col day">Day</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col">
+                <div class="row mb-3">
+                  <div
+                    class="col weather_indicator weather_indicator--humidity"
+                  >
+                    <span>50</span>%
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col weather_indicator weather_indicator--wind">
+                    <span>5</span>m/s
+                  </div>
+                </div>
+                <div class="row">
+                  <div
+                    class="col weather_indicator weather_indicator--pressure"
+                  >
+                    <span>102</span>hPa
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 mb-3 text-center weather-img">
+            <img class="weather_img" src="images/clear-sky.png" />
+          </div>
+          <div class="col-sm-4 col-8 temp temprature text-end">
+            <span>+25</span>&deg;C
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg col-sm-6 mb-2">
+            <div class="card">
+              <div class="card-body">
+                <img src="images/clear-sky.png" alt="" class="card-img" />
+                <div class="card-title mt-5">Day</div>
+                <div class="card-subtitle mt-4 mb-4">+25</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-sm-6 mb-2">
+            <div class="card">
+              <div class="card-body">
+                <img src="images/clear-sky.png" alt="" class="card-img" />
+                <div class="card-title mt-5">Day</div>
+                <div class="card-subtitle mt-4 mb-4">+25</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-sm-6 mb-2">
+            <div class="card">
+              <div class="card-body">
+                <img src="images/clear-sky.png" alt="" class="card-img" />
+                <div class="card-title mt-5">Day</div>
+                <div class="card-subtitle mt-4 mb-4">+25</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-sm-6 mb-2">
+            <div class="card">
+              <div class="card-body">
+                <img src="images/clear-sky.png" alt="" class="card-img" />
+                <div class="card-title mt-5">Day</div>
+                <div class="card-subtitle mt-4 mb-4">+25&deg;C</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-sm-6 mb-2">
+            <div class="card">
+              <div class="card-body">
+                <img src="images/clear-sky.png" alt="" class="card-img" />
+                <div class="card-title mt-5">Day</div>
+                <div class="card-subtitle mt-4 mb-4">+25</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  </body>
+</html>

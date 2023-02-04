@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <link
+      href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <style>
+      #swal2-html-container {
+        color: red;
+      }
+    </style>
+    <script>
+      let locationAPIKey = "pk.19cece3ac2407117342d85a7ea3e7ab7";
+
+      let locationIQBaseEndPoint =
+        "https://us1.locationiq.com/v1/reverse.php?format=json&key=" +
+        locationAPIKey;
+
+      function show() {
+        let options = {
+          enableHighFrequency: true,
+          timeout: 5000,
+        };
+        navigator.geolocation.getCurrentPosition(success, error);
+      }
+      async function success(pos) {
+        let crd = pos.coords;
+        let lat = crd.latitude.toString();
+        let lng = crd.longitude.toString();
+        let url = locationIQBaseEndPoint + "&lat=" + lat + "&lon=" + lng;
+        let response = await fetch(url);
+        let data = await response.json();
+        console.log(data);
+      }
+      function error(err) {
+        console.log(error);
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="show()">click me</button>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+  </body>
+</html>

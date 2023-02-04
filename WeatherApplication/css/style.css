@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+
+#swal2-html-container {
+  color: white;
+  font-weight: bold;
+}
+.swal2-container > div {
+  background-color: rgba(10, 10, 51, 0.9);
+  border: 2px solid blue;
+  border-radius: 5%;
+  text-align: center;
+}
+body {
+  margin: 0px;
+  background-image: radial-gradient(circle, rgba(5, 8, 114, 1), rgb(3, 3, 39));
+  color: white;
+  font-family: "Gowun Dodum", sans-serif;
+  font-size: 22px;
+}
+.weather {
+  width: 80%;
+  height: 100%;
+  margin: 0px auto;
+}
+input[type="search"] {
+  width: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 15px 10px;
+  font-size: 1.5rem;
+  color: inherit;
+  font-weight: bold;
+}
+input[type="search"]::placeholder {
+  color: rgb(228, 212, 212);
+  font-weight: bold;
+}
+.weather-img > img {
+  max-width: 45%;
+}
+
+.weather-city {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.weather-day {
+  font-size: 1.8rem;
+  font-weight: 550;
+}
+.temp {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: inherit;
+  text-align: center;
+}
+.card-title {
+  font-weight: bold;
+}
+.weather_indicator::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.weather_indicator--humidity::before {
+  background-image: url(../images/humidity.png);
+}
+
+.weather_indicator--wind::before {
+  background-image: url(../images/wind.png);
+}
+
+.weather_indicator--pressure::before {
+  background-image: url(../images/pressure.png);
+}
